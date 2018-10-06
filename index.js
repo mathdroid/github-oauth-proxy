@@ -11,7 +11,6 @@ module.exports = async (req, res) => {
   const query = q(req);
   const qs = encode(query);
   const url = `https://github.com/login/oauth/access_token?${qs}`;
-  console.log(url);
   const result = await fetch(url, {
     method: "POST"
   });

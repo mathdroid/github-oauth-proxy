@@ -1,6 +1,6 @@
 const fetch = require("isomorphic-unfetch");
 const q = require("micro-query");
-const cors = require("micro-cors");
+const cors = require("micro-cors")();
 
 const encode = data => {
   return Object.keys(data)
